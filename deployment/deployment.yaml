@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: yinglu91/k-webapp
+        image: yinglu91/k-webapp:1.0
         ports:
         - containerPort: 8080
         
