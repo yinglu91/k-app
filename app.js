@@ -1,7 +1,7 @@
 const http = require('http');
 const os = require('os');
 
-console.log('My k web server starting...');
+console.log('My k web server starting on ' + new Date());
 
 var handler = function(request, response) {
     console.log('Received request from ' + request.connection.remoteAddress);
