@@ -16,6 +16,4 @@ var www = http.createServer(handler);
 var port = 8080;
 www.listen(port);
 
-console.log('The value of PORT is:', process.env.DB_URL);
-console.log('The value of PORT is:', process.env.PORT);
 console.log('My k web server listening on port ' + port);
