@@ -13,7 +13,7 @@ spec:
       - name: webapp
         image: yinglu91/k-webapp:2.0
         env:
-          name: DB_URL
+        - name: DB_URL
           value: postgresql://localhost:5432
         ports:
         - containerPort: 8080
