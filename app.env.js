@@ -7,7 +7,7 @@ var handler = function(request, response) {
     console.log('Received request from ' + request.connection.remoteAddress);
 
     response.writeHead(200);
-    response.end('OH, keep it secret, Nice work! You succeeded in hitting ' + os.hostname
+    response.end('O, Nice work! You succeeded in hitting ' + os.hostname
       + ' on ' + new Date() + '\n');   
 }
 
@@ -17,7 +17,5 @@ var port = 8080;
 www.listen(port);
 
 console.log('The value of DB_URL is:', process.env.DB_URL);
-console.log('The value of DB_USERNAME is:', process.env.DB_USERNAME);
-console.log('The value of DB_PASSWORD is:', process.env.DB_PASSWORD);
 
 console.log('My k web server listening on port ' + port);
